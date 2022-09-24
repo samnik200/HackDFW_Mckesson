@@ -6,6 +6,7 @@ public class BasicInputs
 	private String knownConditions;
 	private String explainSymptoms;
 	private String allergies;
+	private String medications;
 	/**
 	 * 
 	 * @param height
@@ -19,6 +20,16 @@ public class BasicInputs
 	 * @param explainSymptoms
 	 * Patient explaining symptoms
 	 */
+	public BasicInputs(int height, int weight, boolean recurring, String knownConditions, String explainSymptoms, String allergy, String medications)
+	{
+		this.height = height;
+		this.weight = weight;
+		this.recurring = recurring;
+		this.knownConditions = knownConditions;
+		this.explainSymptoms = explainSymptoms;
+		this.allergies = allergy;
+		this.medications = medications;
+	}
 	public BasicInputs(int height, int weight, boolean recurring, String knownConditions, String explainSymptoms, String allergy)
 	{
 		this.height = height;
@@ -75,6 +86,10 @@ public class BasicInputs
 	public String getAllergy()
 	{
 		return allergies;
+	}
+	public String getMedications()
+	{
+		return medications;
 	}
 	
 	
