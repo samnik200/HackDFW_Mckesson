@@ -15,11 +15,26 @@ public class AI {
             if ( test ==0)
             {
                 indx[secondary]=j;
+                secondary++;
             }
             for (i=0;i<Symptom.length;i++)
             {
                  test = PossibleSymptoms[j].compareToIgnoreCase(Symptom[i]);
             }
+        int numberConverted = 0;
+        for (int number : indx) {
+            numberConverted = 10*numberConverted + number;
+        }
+
+        if (numberConverted == 0)
+        {
+
+        }
+        else
+        {
+
+        }
+
 
 
     }
