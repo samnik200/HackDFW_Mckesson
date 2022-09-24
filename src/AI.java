@@ -7,9 +7,9 @@ public class AI {
     private int j;
     private int [] indx;
     private int secondary=0;
-    private String PossibleSymptoms[]={"headache","pain", "urination","bumps", "genitals" , "coughing", "soar", "throat", "rashes", "diarrhea", "vomiting", "runny", "nose"};
+    private String PossibleSymptoms[]={"__","headache1","pain2", "urination3","bumps4", "genitals5" , "coughing6", "soar throat7",  "rashes8", "diarrhea9", "vomiting10", "runny11", "nose12","fever13","tonsils14","swollen15","red16"};
     private String[] Symptom = input_patient.split("");
-    void Symptom_Calc(String[] str)
+    public String Symptom_Calc(String[] str)
     {
         for (j =0;j<Symptom.length;j++)
             if ( test ==0)
@@ -26,10 +26,15 @@ public class AI {
             numberConverted = 10*numberConverted + number;
         }
 
-        if (numberConverted == 0)
+        if (numberConverted == 16)
         {
-
+            return "Common cold, possibly COVID 19";
         }
+        else if(numberConverted == 2345)
+        {
+            return "STD with 95% certainty";
+        }
+        else if (numberConverted== 16791013
         else
         {
 
