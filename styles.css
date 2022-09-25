@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* navbar styles */
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    /* background: lightblue; */
+    font-family: 'Ubuntu', sans-serif;
+    transition: all .3s ease;
+
+}
+
+.navbar.sticky {
+    background-color: #0A41CF;
+    padding: 15px 0;
+}
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight:500;
+}
+
+
+.navbar .logo a span{
+    color: #0A41CF;
+    font-weight:200;
+
+    transition: all 1s ease;
+}
+
+
+.navbar.sticky .logo a span{
+    color: white;
+    transition:color .25s ease;
+}
+
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.navbar .menu li a:hover {
+    color: #0A41CF;
+    transition: .25s ease;
+}
+
+.navbar.sticky .menu li a:hover {
+    color: black;
+    transition: .5s ease;
+
+}
+
+/* home styles */
+.home {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url("./pics/pic2.jpg");
+    background-color: slategray;
+    height: 110vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home span{
+    color: #0A41CF;
+    font-weight: 200;
+}
+
+.home .home-content .text1 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.home .home-content .text2 {
+    font-size: 27px;
+}
+
+
+/* get started */
+.get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.get-started .max-width{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-started span{
+    color: #0A41CF;
+    font-weight: 200;
+}
+.get-started .text3 {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.get-started a {
+    display: inline-block;
+    background: #0A41CF;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
